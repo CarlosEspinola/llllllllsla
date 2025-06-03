@@ -1,0 +1,143 @@
+body {
+  font-family: 'Righteous', sans-serif;
+  background: #111;
+  color: #eee;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Nosifer', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  color: #00ffcc;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.title-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+form, .registro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label, select, input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #333;
+  color: #eee;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+select, input {
+  width: 100%;
+  max-width: 150px;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: #000;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ccaa;
+}
+
+.seccion {
+  background: #1a1a1a;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #444;
+}
+
+th {
+  background-color: #00ffcc;
+  color: #000;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+  background-color: #222;
+}
+
+#historialEntreJugadores p {
+  margin-bottom: 15px;
+  background: #333;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  border-left: 4px solid #00ffcc;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .header-title {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .title-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  form, .registro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  select, input {
+    width: 90%;
+    max-width: none;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1.1em;
+  }
+}
