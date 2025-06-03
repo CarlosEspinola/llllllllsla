@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIFEROS DEL BARRIO</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <!-- Header con título y la imagen a la derecha -->
+  <div class="header-title">
+    <h1>FIFEROS DEL BARRIO FL</h1>
+    <img src="IMAGEN/FIFERO.jpeg" alt="Ícono" class="title-icon">
+  </div>
+
+  <div class="registro">
+    <h2>Registrar Partido</h2>
+
+    <label for="jugador1">Jugador 1:</label>
+    <select id="jugador1">
+      <option value="Carlos Jiménez">Carlos Jiménez</option>
+      <option value="Carlos Espinola">Carlos Espinola</option>
+      <option value="Oscar">Oscar</option>
+      <option value="Luciano">Luciano</option>
+      <option value="Alan">Alan</option>
+    </select>
+
+    <input type="number" id="goles1" placeholder="Goles"/>
+
+    <label for="jugador2">Jugador 2:</label>
+    <select id="jugador2">
+      <option value="Carlos Jiménez">Carlos Jiménez</option>
+      <option value="Carlos Espinola">Carlos Espinola</option>
+      <option value="Oscar">Oscar</option>
+      <option value="Luciano">Luciano</option>
+      <option value="Alan">Alan</option>
+    </select>
+
+    <input type="number" id="goles2" placeholder="Goles"/>
+
+    <button onclick="registrarPartido()">Registrar</button>
+  </div>
+
+  <div class="seccion">
+    <h2>Tabla De Posiciones</h2>
+    <table id="tablaGeneral">
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th>PJ</th>
+          <th>PG</th>
+          <th>PE</th>
+          <th>PP</th>
+          <th>GF</th>
+          <th>GC</th>
+          <th>DG</th>
+          <th>Puntos</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="seccion">
+    <h2>Historial entre Jugadores</h2>
+    <div id="historialEntreJugadores"></div>
+  </div>
+
+  <h2>Partidos Recientes</h2>
+  <ul id="partidosRecientes"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
